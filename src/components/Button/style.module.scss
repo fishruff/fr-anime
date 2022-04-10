@@ -1,0 +1,14 @@
+@import "../../styles/palette";
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.button {
+  color: $red;
+
+  @include from($media-md) {
+    color: blue;
+  }
+  @include from($media-lg) {
+    color: green;
+  }
+}

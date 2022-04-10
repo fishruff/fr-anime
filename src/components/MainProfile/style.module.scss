@@ -1,0 +1,35 @@
+@import "../../styles/palette";
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.MainProfile {
+  background: $bg;
+  border-radius: $br-medium;
+  box-shadow: $bs-default;
+  padding: $pd-normal;
+}
+.navBut {
+  display: flex;
+  justify-content: space-between;
+  padding: $pd-small;
+  border-bottom: 1px solid #666;
+}
+.navButEl {
+  color: $white;
+  padding: $pd-small;
+  border: 1px solid $color-ac;
+  border-radius: $br-small;
+  text-decoration: none;
+  font-size: 20px;
+  transition: $tr-standart;
+
+  &__active {
+    color: $white !important;
+    border: 1px solid $white;
+  }
+
+  &:hover {
+    color: $color-ac;
+    border: 1px solid $white;
+  }
+}

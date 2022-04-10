@@ -1,0 +1,17 @@
+@import "../../styles/palette";
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.Footer {
+  width: 100%;
+  padding: 20px;
+  background: #222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: $white;
+  // border-radius: 15px 15px 0;
+
+  display: flex;
+  justify-content: space-between;
+}

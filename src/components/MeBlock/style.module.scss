@@ -1,0 +1,38 @@
+@import "../../styles/palette";
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.meBlock {
+  background: $bg;
+  color: $white;
+  padding: $pd-meduim;
+  border-radius: $br-medium;
+  box-shadow: $bs-default;
+}
+
+.Pht {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid $color-ac;
+}
+
+.MeDesk {
+  display: flex;
+  justify-content: space-between;
+}
+.MeDeskEl {
+  text-align: center;
+  border: 1px solid $color-ac;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 500ms ease;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-ac;
+    border: 1px solid $white;
+  }
+}

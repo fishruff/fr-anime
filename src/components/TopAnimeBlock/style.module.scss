@@ -1,0 +1,13 @@
+@import "../../styles/palette";
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.TopAnimeBlocksEls {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: $pd-normal;
+}
+.TopAnimeBlock {
+  padding: $pd-normal;
+  color: $white;
+}

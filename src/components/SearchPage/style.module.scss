@@ -1,0 +1,21 @@
+@import "../../styles/palette";
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.SearchPageResults {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: $pd-normal;
+  padding: $pd-normal;
+}
+.SearchPage {
+  padding: $pd-normal;
+  color: $color-ac;
+}
+.SearchPage strong {
+  color: $white;
+  font-weight: 800;
+}
+// .SearchEl {
+//   height: 500px;
+// }

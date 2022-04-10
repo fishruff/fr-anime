@@ -1,0 +1,51 @@
+@import "../../styles/palette";
+@import "../../styles/mixins";
+@import "../../styles/vars";
+
+.Header {
+  padding: $pd-small;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+}
+.logo {
+  height: 40px;
+}
+.RightHeader {
+  display: flex;
+  align-items: center;
+}
+.Search {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.linkHeader {
+  margin-left: 20px;
+  color: $white;
+  text-decoration: none;
+  transition: $tr-standart;
+  font-size: 24px;
+
+  &:hover {
+    border-bottom: 1px solid $color-ac;
+    color: $color-ac;
+  }
+}
+input {
+  // height: 40px;
+  outline: none;
+  border: none;
+  border-radius: $br-small;
+  padding: $pd-small;
+  text-align: right;
+  background: $searchBG;
+  color: $white;
+}
+::placeholder {
+  color: $white;
+}
