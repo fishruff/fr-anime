@@ -9,6 +9,7 @@ import SearchPage from "./components/SearchPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import AnimePage from "./components/AnimePage/indes";
 
 function App() {
   const [topAnime, SetTopAnime] = useState([]);
@@ -62,8 +63,10 @@ function App() {
           animeList={animeList}
           SetSearch={SetSearch}
         />
-        <SearchPage animeList={animeList} search={search} />
 
+
+        {/* <SearchPage animeList={animeList} search={search} /> */}
+        <AnimePage/>
         <Routes>
           <Route
             path="/"
